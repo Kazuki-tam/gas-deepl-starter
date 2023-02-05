@@ -18,13 +18,14 @@ This template is inspired by [DeepL API - Google Sheets Example](https://github.
 
 ## Main dependencies
 
-- [DeepL API](https://www.deepl.com/pro#developer)
+- [DeepL API](https://www.deepl.com/en/docs-api)
 - [Google Apps Script](https://workspace.google.co.jp/intl/en/products/apps-script/)
 - [Clasp](https://github.com/google/clasp)
 - [esbuild](https://esbuild.github.io/)
 
 ## Prerequisites
 
+- [DeepL](https://www.deepl.com/pro#developer)
 - [Google Workspace](https://workspace.google.co.jp/)
 - [Deno v1.29.4 or higher](https://deno.land/)
 
