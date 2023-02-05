@@ -1,20 +1,24 @@
-# gas-deno-esbuild-starter
+# gas-deepl-starter
 
-`gas-deno-esbuild-starter` is a starter kit for Google Apps Script by Deno.
+`gas-deepl-starter` is a starter kit to use DeepL on Google Sheets.
+
+This template is inspired by [DeepL API - Google Sheets Example](https://github.com/DeepLcom/google-sheets-example).
 
 ## Status
 
-[![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/gas-deno-esbuild-starter)](https://github.com/Kazuki-tam/gas-deno-esbuild-starter/releases/tag/v0.0.1)
-[![Issues](https://img.shields.io/github/issues/Kazuki-tam/gas-deno-esbuild-starter)](https://github.com/Kazuki-tam/gas-deno-esbuild-starter/issues)
+[![Release (latest by date)](https://img.shields.io/github/v/release/Kazuki-tam/gas-deepl-starter)](https://github.com/Kazuki-tam/gas-deepl-starter/releases/tag/v0.0.1)
+[![Issues](https://img.shields.io/github/issues/Kazuki-tam/gas-deepl-starter)](https://github.com/Kazuki-tam/gas-deepl-starter/issues)
 ![Maintenance](https://img.shields.io/maintenance/yes/2023)
-![Release date](https://img.shields.io/github/release-date/Kazuki-tam/gas-deno-esbuild-starter)
+![Release date](https://img.shields.io/github/release-date/Kazuki-tam/gas-deepl-starter)
 
 ## Features
+- Translate multiple texts from one language to another at once using the DeepL Translation API and Google Apps Script
 - Develop locally with TypeScript, Clasp and Deno
 - Bundle your files with esbuild
 
 ## Main dependencies
 
+- [DeepL API](https://www.deepl.com/pro#developer)
 - [Google Apps Script](https://workspace.google.co.jp/intl/en/products/apps-script/)
 - [Clasp](https://github.com/google/clasp)
 - [esbuild](https://esbuild.github.io/)
@@ -48,6 +52,18 @@ Open the app script from your spreadsheet and check out your script id on the se
 }
 ```
 
+### Set DeepL auth key into script properties
+
+1. Copy your authentication key at the DeepL account
+2. Set the authentication key into script properties in your Apps Script project.
+
+```
+Key: DEEPL_AUTH_KEY
+value: <YOUR-AUTH-KEY>
+```
+
+### Upload a script project
+
 Deploy your code to the existing project.
 
 ```shell
@@ -73,6 +89,12 @@ Open the current directory's clasp project on script.google.com.
 ```shell
 deno task open
 ```
+
+## DeepL
+The DeepL API provides programmatic access to DeepL’s machine translation technology, making it possible to bring high quality translation capabilities directly to your websites and applications.
+
+[📖 DeepL API](https://www.deepl.com/docs-api)
+[📖 DeepL API - Google Sheets Example](https://github.com/DeepLcom/google-sheets-example)
 
 ## Google Apps Script
 Google Apps Script is a JavaScript-based scripting language that allows you to extend Google's G Suite of online productivity tools (e.g. Google Sheets, Google Forms, Gmail, etc.). It allows you to automate tasks, connect to external APIs, and build custom tools and applications that interact with G Suite data.
