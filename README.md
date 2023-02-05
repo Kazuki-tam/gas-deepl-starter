@@ -63,6 +63,8 @@ Key: DEEPL_AUTH_KEY
 value: <YOUR-AUTH-KEY>
 ```
 
+[📖 How to add script properties](https://developers.google.com/apps-script/guides/properties#manage_script_properties_manually)
+
 ### Upload a script project
 
 Deploy your code to the existing project.
