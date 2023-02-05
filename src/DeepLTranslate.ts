@@ -8,6 +8,15 @@ declare const global: {
   [x: string]: DeepLTranslateFunc;
 };
 
+/**
+ * Translates from one language to another using the DeepL Translation API.
+ *
+ * @param {string} input The text to translate
+ * @param {string} sourceLang The language code of the source language
+ * @param {string} targetLang The language code of the target language
+ * @param {string} glossaryId The ID of a glossary to use
+ * @return Translated text
+ */
 function DeepLTranslate(
   input: string,
   sourceLang?: string,

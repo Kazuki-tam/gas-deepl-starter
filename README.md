@@ -70,6 +70,31 @@ Deploy your code to the existing project.
 deno task deploy
 ```
 
+### DeepLTranslate function
+Translates from one language to another using the DeepL Translation API.
+
+```
+// Example 1 on Google Sheets
+=DeepLTranslate(A1, "en", "JA")
+
+// Example 2 on Google Sheets
+=DeepLTranslate(A1, "ja", "FR")
+
+// Example 3 on Google Sheets
+=DeepLTranslate(A1, "ja", "EN")
+```
+
+### DeepLUsage function
+Retrieve information about your DeepL API usage during the current billing period.
+
+```
+// Example 1 on Google Sheets
+=DeepLUsage("count")
+
+// Example 2 on Google Sheets
+=DeepLUsage("limit")
+```
+
 ## Available Commands
 
 Build your project.
@@ -93,8 +118,8 @@ deno task open
 ## DeepL
 The DeepL API provides programmatic access to DeepL’s machine translation technology, making it possible to bring high quality translation capabilities directly to your websites and applications.
 
-[📖 DeepL API](https://www.deepl.com/docs-api)
-[📖 DeepL API - Google Sheets Example](https://github.com/DeepLcom/google-sheets-example)
+- [📖 DeepL API](https://www.deepl.com/docs-api)
+- [📖 DeepL API - Google Sheets Example](https://github.com/DeepLcom/google-sheets-example)
 
 ## Google Apps Script
 Google Apps Script is a JavaScript-based scripting language that allows you to extend Google's G Suite of online productivity tools (e.g. Google Sheets, Google Forms, Gmail, etc.). It allows you to automate tasks, connect to external APIs, and build custom tools and applications that interact with G Suite data.

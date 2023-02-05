@@ -1,5 +1,6 @@
 import { z } from "https://deno.land/x/zod@v3.20.2/mod.ts";
 import {
+  deepLUsageTypeSchema,
   formDataSchema,
   headersSchema,
   methodSchema,
@@ -16,11 +17,13 @@ type DeepLTranslateFunc = (
   targetLang?: string | undefined,
   glossaryId?: string | undefined,
 ) => string | undefined;
-type DeepLUsageFunc = (type: string) => string | undefined;
+type DeepLUsageFunc = (type: string) => number | string | undefined;
+type DeepLUsageType = z.infer<typeof deepLUsageTypeSchema>;
 
 export type {
   DeepLTranslateFunc,
   DeepLUsageFunc,
+  DeepLUsageType,
   FormData,
   Headers,
   Methods,

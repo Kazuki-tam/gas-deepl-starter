@@ -15,7 +15,6 @@ import { getPropertiesService } from "../utils/getPropertiesService.ts";
  * @param {string} glossaryId The ID of a glossary to use
  * @return Translated text
  */
-
 const translateWithDeepl = (
   input: string,
   sourceLang?: string,
