@@ -1,4 +1,4 @@
-import { sleepForBackoff } from "./sleepForBackoff.ts";
+import { sleepForBackoff } from "../utils/sleepForBackoff.ts";
 import { FormData, Methods, URLFetchRequestOptions } from "../types/deepl.ts";
 
 /**

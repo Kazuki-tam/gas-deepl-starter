@@ -1,7 +1,8 @@
 /**
- * Sleep after failed requests.
+ * Gets a property store that all users can access, but only within this script.
  * @param {string} propertyName The Properties service
  * @return The property value
+ * https://developers.google.com/apps-script/reference/properties/properties-service
  */
 
 const getPropertiesService = (propertyName: string) => {
